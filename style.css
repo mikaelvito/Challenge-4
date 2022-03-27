@@ -1,13 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'Bebas Neue', cursive;
     font-family: 'Open Sans', sans-serif;
     background-color: #9C835F;
 }
 
-/* .background {
-    background-color: #9C835F;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-} */
+.menu-atas {
+    display: flex;
+    align-items: center;
+}
+
+.lebih-kecil {
+    margin-top: 12px;
+    margin-left: 27px;
+}
+
+.logo-gabung {
+    margin-left: 27px;
+    margin-top: 10px;
+}
+
+.rock-paper-scissor {
+    color: #F9B23D;
+    position: absolute;
+    left: 198px;
+    top: 5px;
+    width: 410px;
+    height: 62px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.tangan-player-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.batu-player {
+    width: 128px;
+    height: 92px;
+    left: 340px;
+    top: 200px;
+    position: absolute;
+
+}
+
+.kertas-player {
+    width: 115px;
+    height: 150px;
+    position: absolute;
+    left: 346px;
+    top: 350px;
+}
+
+.gunting-player {
+    width: 134px;
+    height: 160px;
+    position:absolute;
+    top: 560px;
+    left: 335px;
+}
+
+.player {
+    position: absolute;
+    width: 299px;
+    height: 94px;
+    left: 335px;
+    top: 100px;
+}
+
+.vs-refresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.vs {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    top: 380px;
+    left: 710px;
+}
+
+.refresh {
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    top: 700px;
+    left: 735px;
+}
+
+.robot {
+    position: absolute;
+    width: 299px;
+    height: 94px;
+    right: 165px;
+    top: 105px;
+}
+
+.batu-robot {
+    width: 128px;
+    height: 92px;
+    right: 360px;
+    top: 205px;
+    position: absolute;
+}
+
+.kertas-robot {
+    width: 115px;
+    height: 150px;
+    position: absolute;
+    right: 360px;
+    top: 345px;
+}
+
+.gunting-robot {
+    width: 134px;
+    height: 160px;
+    position:absolute;
+    top: 560px;
+    right: 360px;
+}
+
+
