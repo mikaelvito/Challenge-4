@@ -65,4 +65,36 @@ class match {
           }, 300);
         });
     }
+
+    matchFlow()
+
+
+    computerChoose() {
+        const random = Math.floor(Math.random() * 3 + 1);
+        if (random === 1) {
+            this.computerChoice = "batu";
+        } else if (random === 2) {
+            this.computerChoice = "kertas";
+        } else if (random === 3 ) {
+            this.computerChoice = "gunting"
+        }
+    }
+
+    winning() {
+        if (this.playerChoice === this.computerChoice) {
+            this.result = "draw";
+        } else if (this.playerChoice === "batu") {
+            this.computerChoice === "kertas"
+            ? (this.result = "kalah")
+            : (this.result = "menang");
+        } else if (this.playerChoice === "kertas") {
+            this.computerChoice === "gunting"
+            ? (this.result = "kalah")
+            : (this.result = "menang");
+        } else if (this.playerChoice === "gunting") {
+            this.computerChoice === "batu"
+            ? (this.result = "kalah")
+            : (this.result = "menang");    
+        }
+    }
 }
