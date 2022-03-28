@@ -36,36 +36,66 @@ body {
     font-size: 36px;
 }
 
-.tangan-player-section {
+.app {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 75%;
+    height: 650px;
+    margin: auto;
+    row-gap: 15px;
 }
 
-.batu-player {
+.batunyaPlayer {
     width: 128px;
     height: 92px;
     left: 340px;
     top: 200px;
     position: absolute;
-
 }
 
-.kertas-player {
-    width: 115px;
-    height: 150px;
+.batunyaPlayer:hover {
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    padding: 1px;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.kertasnyaPlayer {
     position: absolute;
     left: 346px;
     top: 350px;
+    width: 115px;
+    height: 150px;
 }
 
-.gunting-player {
+.kertasnyaPlayer:hover {
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    padding: 1px;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.guntingnyaPlayer {
     width: 134px;
     height: 160px;
     position:absolute;
     top: 560px;
     left: 335px;
+}
+
+.guntingnyaPlayer:hover {
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    padding: 1px;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .player {
@@ -99,36 +129,36 @@ body {
     left: 735px;
 }
 
-.robot {
+.computer {
     position: absolute;
     width: 299px;
     height: 94px;
-    right: 165px;
+    right: 180px;
     top: 105px;
 }
 
-.batu-robot {
+.batunyaComputer {
     width: 128px;
     height: 92px;
-    right: 360px;
+    right: 380px;
     top: 205px;
     position: absolute;
 }
 
-.kertas-robot {
+.kertasnyaComputer {
     width: 115px;
     height: 150px;
     position: absolute;
-    right: 360px;
+    right: 380px;
     top: 345px;
 }
 
-.gunting-robot {
+.guntingnyaComputer {
     width: 134px;
     height: 160px;
     position:absolute;
     top: 560px;
-    right: 360px;
+    right: 380px;
 }
 
 
