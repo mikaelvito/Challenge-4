@@ -33,49 +33,53 @@ class match {
     batuMatch() {
         this.batunyaPlayer.addEventListener("click", () => {
             this.playerChoice = "batu";
-            console.log(`saya memilih ${this.pilihan}`);
+            console.log(`saya memilih ${this.playerChoice}`);
             this.removeStyle();
             setTimeout(() => {
                 this.matchFlow();
                 this.chooseStyle();
-            }, 300);
+            }, 500);
         });
     }
 
     kertasMatch() {
         this.kertasPlayer.addEventListener("click", () => {
             this.playerChoice = "kertas";
-            console.log(`saya memilih ${this.pilihan}`);
+            console.log(`saya memilih ${this.playerChoice}`);
             this.removeStyle();
             setTimeout(() => {
                 this.matchFlow();
                 this.chooseStyle();
-            }, 300);
+            }, 500);
         });
     }
 
     guntingMatch() {
         this.guntingnyaPlayer.addEventListener("click", () => {
           this.playerChoice = "gunting";
-          console.log(`saya memilih ${this.pilihan}`);
+          console.log(`saya memilih ${this.playerChoice}`);
           this.removeStyle();
           setTimeout(() => {
             this.matchFlow();
             this.chooseStyle();
-          }, 300);
+          }, 500);
         });
     }
 
-    matchFlow()
+    matchFlow() {
+        this.computerChoose();
+        this.winning();
+        this.winOrLose();
+    }
 
 
     computerChoose() {
-        const random = Math.floor(Math.random() * 3 + 1);
-        if (random === 1) {
+        const acak = Math.floor(Math.random() * 3 + 1);
+        if (acak === 1) {
             this.computerChoice = "batu";
-        } else if (random === 2) {
+        } else if (acak === 2) {
             this.computerChoice = "kertas";
-        } else if (random === 3 ) {
+        } else if (acak === 3 ) {
             this.computerChoice = "gunting"
         }
     }
@@ -104,19 +108,19 @@ class match {
                 this.versus.textContent = "Player 1 Win";
                 this.bgVersus.style.backgroundColor = "#4C9654";
                 this.versus.style.color = "white";
-                this.bgVersus.style.transform = "rorate(-55deg)";
+                this.bgVersus.style.transform = "rotate(-55deg)";
                 this.versus.style.fontSize = "40px";
             } else if (this.result === "kalah") {
                 this.versus.textContent = "Com Win";
                 this.bgVersus.style.backgroundColor = "#4C9654";
                 this.versus.style.color = "white";
-                this.bgVersus.style.transform = "rorate(-55deg)";
+                this.bgVersus.style.transform = "rotate(-55deg)";
                 this.versus.style.fontSize = "40px";
             } else {
                 this.versus.textContent = "Draw";
                 this.bgVersus.style.backgroundColor = "#035B0C";
                 this.versus.style.color = "white";
-                this.bgVersus.style.transform = "rorate(-55deg)";
+                this.bgVersus.style.transform = "rotate(-55deg)";
                 this.versus.style.fontSize = "40px";
             }
         }
@@ -125,7 +129,6 @@ class match {
         this.computerChooseStyle();
         this.playerChooseStyle();
     }
-
 
     computerChooseStyle() {
         if (this.computerChoice === "batu") {
@@ -159,7 +162,6 @@ class match {
          }
     }
 
-
     removeStyle() {
         this.bgBatuPlayer.style.backgroundColor = null;
         this.bgKertasPlayer.style.backgroundColor = null;
@@ -174,3 +176,6 @@ class match {
         this.versus.style.fontSize = "144px";
     }
 }
+
+const vito = new match();
+vito.matchPlay();
