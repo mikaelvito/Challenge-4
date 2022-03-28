@@ -161,4 +161,27 @@ body {
     right: 380px;
 }
 
+.bgPlayer {
+    display: flex;
+    width: 203px;
+    height: 174px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.bgComputer {
+    display: flex;
+    width: 203px;
+    height: 174px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.versus {
+    width: 271px;
+    height: 167px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
