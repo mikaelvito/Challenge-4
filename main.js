@@ -108,19 +108,19 @@ class match {
                 this.versus.textContent = "Player 1 Win";
                 this.bgVersus.style.backgroundColor = "#4C9654";
                 this.versus.style.color = "white";
-                this.bgVersus.style.transform = "rotate(-55deg)";
+                // this.bgVersus.style.transform = "rotate(-40deg)";
                 this.versus.style.fontSize = "40px";
             } else if (this.result === "kalah") {
                 this.versus.textContent = "Com Win";
                 this.bgVersus.style.backgroundColor = "#4C9654";
                 this.versus.style.color = "white";
-                this.bgVersus.style.transform = "rotate(-55deg)";
+                // this.bgVersus.style.transform = "rotate(-40deg)";
                 this.versus.style.fontSize = "40px";
             } else {
                 this.versus.textContent = "Draw";
                 this.bgVersus.style.backgroundColor = "#035B0C";
                 this.versus.style.color = "white";
-                this.bgVersus.style.transform = "rotate(-55deg)";
+                // this.bgVersus.style.transform = "rotate(-40deg)";
                 this.versus.style.fontSize = "40px";
             }
         }

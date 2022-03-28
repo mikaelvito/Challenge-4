@@ -31,7 +31,7 @@ body {
     color: #F9B23D;
     position: absolute;
     left: 198px;
-    top: 5px;
+    top: 20px;
     width: 410px;
     height: 62px;
     font-weight: 700;
@@ -136,13 +136,20 @@ body {
     transition: 0.5s;
 }
 
-.nama {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 80px;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing:  0.1rem;
+.nama .player {
+    position: absolute;
+    width: 299px;
+    height: 94px;
+    left: 350px;
+    top: 100px;
+}
+
+.nama .computer {
+    position: absolute;
+    width: 299px;
+    height: 94px;
+    right: 160px;
+    top: 105px;
 }
 
 
@@ -152,31 +159,7 @@ body {
 }
 
 .game-control img {
-    width: 120px;
-}
-
-.batunyaComputer {
-    width: 128px;
-    height: 92px;
-    right: 380px;
-    top: 205px;
-    position: absolute;
-}
-
-.kertasnyaComputer {
-    width: 115px;
-    height: 150px;
-    position: absolute;
-    right: 380px;
-    top: 345px;
-}
-
-.guntingnyaComputer {
-    width: 134px;
-    height: 160px;
-    position:absolute;
-    top: 560px;
-    right: 380px;
+    width: 60px;
 }
 
 .bgPlayer {
@@ -192,9 +175,6 @@ body {
     width: 203px;
     height: 174px;
     border-radius: 10px;
-    transition: 0.2s;
-    right: 180px;
-    top: 345px;
 }
 
 .versus {
@@ -203,6 +183,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 720px;
+    top: 320px;
 }
 
 .vs {
@@ -215,6 +198,9 @@ body {
     font-weight: 700;
     letter-spacing: 0.1rem;
     color: #bd0000;
-    border-radius: 15px;
+    border-radius: 30px;
+    position: absolute;
+    left: 1%;
+    top: 30px;
 }
 
