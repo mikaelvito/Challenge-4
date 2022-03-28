@@ -97,4 +97,62 @@ class match {
             : (this.result = "menang");    
         }
     }
+
+    changeVersusLogo() {}
+        winOrLose() {
+            if (this.result === 'menang') {
+                this.versus.textContent = "Player 1 Win";
+                this.bgVersus.style.backgroundColor = "#4C9654";
+                this.versus.style.color = "white";
+                this.bgVersus.style.transform = "rorate(-55deg)";
+                this.versus.style.fontSize = "40px";
+            } else if (this.result === "kalah") {
+                this.versus.textContent = "Com Win";
+                this.bgVersus.style.backgroundColor = "#4C9654";
+                this.versus.style.color = "white";
+                this.bgVersus.style.transform = "rorate(-55deg)";
+                this.versus.style.fontSize = "40px";
+            } else {
+                this.versus.textContent = "Draw";
+                this.bgVersus.style.backgroundColor = "#035B0C";
+                this.versus.style.color = "white";
+                this.bgVersus.style.transform = "rorate(-55deg)";
+                this.versus.style.fontSize = "40px";
+            }
+        }
+
+    chooseStyle() {}
+
+
+    computerChooseStyle() {
+        if (this.computerChoice === "batu") {
+            this.bgBatuComputer.style.backgroundColor = "#c4c4c4";
+            this.bgKertasComputer.style.backgroundColor = null;
+            this.bgGuntingComputer.style.backgroundColor = null;
+        } else if (this.computerChoice === "kertas") {
+            this.bgBatuComputer.style.backgroundColor = null;
+            this.bgKertasComputer.style.backgroundColor = "#c4c4c4";
+            this.bgGuntingComputer.style.backgroundColor = null;
+        } else if (this.computerChoice === "gunting") {
+            this.bgBatuComputer.style.backgroundColor = null;
+            this.bgKertasComputer.style.backgroundColor = null;
+            this.bgGuntingComputer.style.backgroundColor = "#c4c4c4";
+        }
+    }
+
+    playerChooseStyle() {
+        if (this.playerChoice === "batu") {
+            this.bgBatuPlayer.style.backgroundColor = "#c4c4c4";
+            this.bgKertasPlayer.style.backgroundColor = null;
+            this.bgGuntingPlayer.style.backgroundColor = null;
+        } else if (this.playerChoice === "kertas") {
+            this.bgBatuPlayer.style.backgroundColor = null;
+            this.bgKertasPlayer.style.backgroundColor = "#c4c4c4";
+            this.bgGuntingPlayer.style.backgroundColor = null;
+        } else if (this.playerChoice === "gunting") {
+            this.bgBatuPlayer.style.backgroundColor = null;
+            this.bgKertasPlayer.style.backgroundColor = null;
+            this.bgGuntingPlayer.style.backgroundColor = "#c4c4c4";
+         }
+    }
 }
