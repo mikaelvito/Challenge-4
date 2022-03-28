@@ -121,7 +121,10 @@ class match {
             }
         }
 
-    chooseStyle() {}
+    chooseStyle() {
+        this.computerChooseStyle();
+        this.playerChooseStyle();
+    }
 
 
     computerChooseStyle() {
@@ -154,5 +157,20 @@ class match {
             this.bgKertasPlayer.style.backgroundColor = null;
             this.bgGuntingPlayer.style.backgroundColor = "#c4c4c4";
          }
+    }
+
+
+    removeStyle() {
+        this.bgBatuPlayer.style.backgroundColor = null;
+        this.bgKertasPlayer.style.backgroundColor = null;
+        this.bgGuntingPlayer.style.backgroundColor = null;
+        this.bgBatuComputer.style.backgroundColor = null;
+        this.bgKertasComputer.style.backgroundColor = null;
+        this.bgGuntingComputer.style.backgroundColor = null;
+        this.versus.textContent = "VS";
+        this.bgVersus.style.backgroundColor = null;
+        this.versus.style.color = null;
+        this.bgVersus.style.transform = null;
+        this.versus.style.fontSize = "144px";
     }
 }
